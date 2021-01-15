@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image:
+        url('/img/bg-pattern.png'),
+        linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav,
+.brandName {
+    font-family: 'Catamaran', 'Helvetica', 'Arial', sans-serif;
+}
+
+button,
+.menuBurger {
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+}
+
+p {
+    font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
+}
+
+footer {
+    font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
+}
+
+a {
+    color: rgb(100, 100, 100);
+    transition: all 0.3s ease-out;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(253, 204, 82);
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+}
+
+.brandName {
+    color: rgb(253, 204, 82) !important;
+    transition: color .15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.brandName:hover {
+    color: rgb(255, 255, 255) !important;
+}
+
+.menuBurger {
+    color: rgba(0, 0, 0, 0.5) !important;
+}
+
+.menuBurger:hover {
+    color: rgb(212, 212, 212) !important;
+}
+
+.navbar.scrolled {
+    background: rgb(255, 255, 255);
+}
+
+@media screen and (min-width: 768px) {
+    .navbar {
+        background-color: transparent;
+        transition: 300ms ease;
+    }
+
+    .menuBurger {
+        color: rgba(220, 220, 220, 0.5) !important;
+        transition: color .15s ease-in-out;
+        transition-property: color;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    .menuBurger:hover {
+        color: rgb(255, 255, 255) !important;
+    }
+
+    .menuBurger.scrolled {
+        color: rgba(128, 128, 128, 0.911) !important;
+    }
+
+    .menuBurger.scrolled:hover {
+        color: rgb(253, 204, 82) !important;
+    }
+
+    .brandName.scrolled {
+        color: rgb(0, 0, 0) !important;
+        transition: color .15s ease-in-out;
+        transition-property: color;
+        transition-duration: 0.15s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+
+    .brandName.scrolled:hover {
+        color: rgb(253, 204, 82) !important;
+    }
+}
+
+.firstSection,
+.secondSection,
+.thirdSection,
+.fourthSection,
+.fifthSection {
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+}
+
+.firstSection,
+.fourthSection {
+    font-family: 'Mulish', 'Helvetica', 'Arial', sans-serif;
+    font-size: 2rem;
+}
+
+.btnSpecial:hover {
+    border-color: #fdcc52;
+    background-color: transparent;
+    color: rgb(253, 204, 82);
+}
+
+.btnSpecial {
+    border-radius: 25px;
+    font-family: 'Lato', 'Helvetica', 'Arial', sans-serif;
+    font-size: .7rem;
+    transition: color .15s ease-in-out, border-color .15s ease-in-out;
+    transition-property: color, border-color;
+    transition-duration: 0.15s, 0.15s;
+    transition-timing-function: ease-in-out, ease-in-out, ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;
+}
+
+.imgResize {
+    width: 200px;
+}
+
+.imgContainer {
+    left: 0;
+    position: relative;
+    top: 0;
+}
+
+.img1 {
+    border-radius: 5px;
+    left: 0;
+    top: 0;
+    position: relative;
+    width: 47%;
+    z-index: 2;
+}
+
+.img2 {
+    position: absolute;
+    z-index: 1;
+}
+
+.secondSection {
+    background-color: rgb(254, 203, 78);
+}
+
+.liner {
+    color: rgb(221, 221, 221);
+    font-weight: bold;
+    letter-spacing: -3px;
+}
+
+.card {
+    border: 0;
+}
+
+.iconDesign {
+    background: -moz-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background: -webkit-linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background: linear-gradient(to right, rgba(218, 36, 49, 1), rgba(122, 67, 151, 1));
+    background-clip: text;
+    font-size: 3.5rem;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.fourthSection {
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('/img/bg-cta.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.fifthSection {
+    font-size: 2rem;
+    background-color: rgb(254, 203, 78);
+}
+
+.footerSection {
+    background: rgb(34, 34, 34);
+    color: rgb(100, 100, 100);
+}
+
+.spanColor {
+    color: rgb(221, 76, 57);
+    font-size: 2.8rem;
+}
+
+.icons {
+    font-size: 3rem;
+}
+
+.twitterColor {
+    color: rgb(29, 161, 243);
+    opacity: .9;
+    transition: color .15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.twitterColor:hover {
+    color: rgb(29, 161, 243);
+    opacity: 1;
+}
+
+.facebookColor {
+    color: rgb(59, 89, 153);
+    opacity: .9;
+    transition: color .15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.facebookColor:hover {
+    color: rgb(59, 89, 153);
+    opacity: 1;
+}
+
+.googleColor {
+    color: rgb(221, 76, 57);
+    opacity: .9;
+    transition: color .15s ease-in-out;
+    transition-property: color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
+.googleColor:hover {
+    color: rgb(221, 76, 57);
+    opacity: 1;
+}
+
+.footerLink {
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
