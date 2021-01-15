@@ -1,0 +1,33 @@
+$colors: (
+  base: (
+    "black": #222,
+    "white": #efefef
+  ),
+
+  defaultTheme: material,
+
+  themes: (
+    material: (
+      // primary, secondary, info, warning, danger, success
+      primary: #2196f3,
+      secondary: #607d8b,
+      info: #009688,
+      success: #4caf50,
+      warning: #ff9800,
+      danger: #f44336
+    ),
+    flatui: (
+      primary:#2980b9,
+      secondary:#7f8c8d,
+      info: #1ABC9C,
+      success:#27ae60,
+      warning:#f39c12,
+      danger:#c0392b
+      )
+  ),
+    
+  lighter: 5 10 15 20,
+    
+  darker: 5 10 15 20
+)
+
