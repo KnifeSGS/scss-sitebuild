@@ -1,4 +1,5 @@
-// .column--default-2
+@use 'breakpoint' as *;
+@use '../functions' as *;
 
 @mixin set-column-width ($viewport, $column-count) {
   $width: 100% * $column-count / var(grid-size);

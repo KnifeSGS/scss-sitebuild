@@ -1,3 +1,5 @@
+@use 'var' as *;
+
 @function convert-string-to-number ($string) {
   @if $string == var(column-postfix-default) {
     @return 1;

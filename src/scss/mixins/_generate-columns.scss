@@ -1,7 +1,6 @@
-// column--default-1 .... column--default-12
-// column--mobile-1 .... column--mobile-12
-// column--tablet-1 .... column--tablet-12
-// column--desktop-1 .... column--desktop-12
+@use '../functions' as *;
+@use '../variables' as *;
+@use 'set-column-width' as *;
 
 @mixin generate-columns {
   $postfixes: var(column-postfix);
@@ -11,6 +10,8 @@
     @for $i from 1 through $grid-size {
       .#{var(column-classname)}-#{$postfix}-#{$i} {
         @include set-column-width($postfix, $i);
+        margin: 0 auto;
+        display: flex;
       }
     }
   }

@@ -1,9 +1,15 @@
+@use '../functions' as *;
+@use '../variables' as *;
+@use 'breakpoint' as *;
+
 @mixin column-default-style {
   // .container > [class^="default"] container gyermek elemeinek classname-e kezdődjön a defaultal
   .#{var(container-classname)} > [class^="#{var(column-classname)}"] {
-    box-sizing: border-box;
     padding: var(column-padding-default);
     position: relative;
+    display: flex;
+    justify-content: center;
+    
 
     @include mobile-up {
       padding: var(column-padding-mobile);

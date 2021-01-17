@@ -1,3 +1,5 @@
+@use '../variables' as *;
+
 @function get-keys($string, $separator: '-') {
   $keys: ();
   $index: str-index($string, $separator);

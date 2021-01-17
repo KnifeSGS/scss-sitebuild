@@ -1,0 +1,90 @@
+@use '../variables';
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  width: 100%;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 99;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 0 3rem;
+}
+
+section {
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 960px) {
+  section {
+    text-align: left;
+  }
+} 
+
+h1 {
+  font-weight: 300;
+  font-size: 2,5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 960px) {
+  footer {
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+}
+
+.button {
+  color: white;
+  border: 1px solid;
+  text-align: center;
+  padding: .5rem 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+}
+
+.button:hover {
+  background-color: variables.$button-hover-background;
+}
+
+.imgContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
+}
+
+img {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  margin: 0 3rem;
+  width: 53%;
+}

@@ -1,7 +1,8 @@
-@import "variables/variables";
-@import "mixins/mixins";
-@import "functions/functions";
+@use 'commons';
+@use "variables";
+@use "functions";
+@use "mixins";
 
-@include generate-container();
-@include column-default-style();
-@include generate-columns();
+@include mixins.column-default-style();
+@include mixins.generate-container();
+@include mixins.generate-columns();

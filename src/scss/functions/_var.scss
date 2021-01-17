@@ -1,3 +1,7 @@
+@use 'get-keys' as *;
+@use '../variables' as *;
+@use 'sass:map';
+
 @function var($string, $data: $config) {
   $keys: get-keys($string);
   @each $key in $keys {

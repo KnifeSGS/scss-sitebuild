@@ -1,7 +1,6 @@
 @use "../variables/colors";
 @use "../mixins/texts";
-@use "../functions/var.scss" as *;
-@use "../functions/get-default-theme.scss" as *;
+@use "../functions/functions.scss" as *;
 @use "sass:map";
 
 .text {

@@ -5,50 +5,42 @@
     <meta charset="utf-8">
     <meta name="viewport"
         content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/0999139d59.js"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/simple-line-icons.css">
+    <link rel="stylesheet" href="./css/betterbs.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Sitebuilding</title>
 </head>
 
-<body class="d-flex flex-column">
-    <header class="d-flex justify-content-center">
-        <nav
-            class="navbar navbar-expand-md p-3 px-5 mw-100 navbar-dark fixed-top">
-            <a class="navbar-brand brandName" href="./index.html">Start
+<body>
+    <header class="">
+        <nav class="nav">
+            <a class="nav__brand brandName" href="./index.html">Start
                 bootstrap</a>
-            <button class="navbar-toggler text-bottom menuBurger " type="button"
-                data-toggle="collapse" data-target="#mainMenu"
-                aria-controls="mainMenu" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="align-middle">
-                    Menu
-                </span>
-                <span class="burgerIcon align-middle"><i
-                        class="fas fa-bars"></i></span>
-            </button>
-            <div class="collapse navbar-collapse menuItems justify-content-end"
-                id="mainMenu">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link menuBurger text-uppercase" href="#secondSection"
-                            id="download">Download<span
+            <div class="nav__container">
+                <label class="nav__hamburger-label" for="menu">
+                    <span class="nav__hamburger-menu">Menu</span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                    <span class="nav__hamburger-line"></span>
+                </label>
+                <input class="nav__hamburger-checkbox" type="checkbox"
+                    id="menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a class="nav__link menuBurger"
+                            href="#secondSection">DOWNLOAD<span
                                 class="sr-only">Download</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link menuBurger text-uppercase" href="#thirdSection"
-                            id="features">Features<span
+                    <li class="nav__item">
+                        <a class="nav__link menuBurger"
+                            href="#thirdSection">FEATURES<span
                                 class="sr-only">Features</span></a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link menuBurger text-uppercase" href="#fifthSection"
-                            id="contact">Contact<span
+                    <li class="nav__item">
+                        <a class="nav__link menuBurger"
+                            href="#fifthSection">CONTACT<span
                                 class="sr-only">Contact</span></a>
                     </li>
                 </ul>
@@ -57,175 +49,143 @@
     </header>
 
     <main>
-        <section class="py-5 firstSection my-5">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-md-12 mx-auto mb-5 mb-lg-0">
-                        <div class="row">
-                            <div class="col-md-6 d-flex justify-content-center">
-                                <article
-                                    class="d-flex flex-column align-self-center mx-5 pl-md-5">
-                                    <section
-                                        class="text-center text-md-left text-white mb-3 mt-0 mt-md-5">
-                                        <h1 class="font-weight-light display-5">
-                                            New Age is an app
-                                            landing page that will
-                                            help you beautifully
-                                            showcase your new
-                                            mobile app, or anything
-                                            else!
-                                        </h1>
-                                    </section>
-                                    <footer
-                                        class="d-flex justify-content-center justify-content-md-start mb-5 mb-md-0">
-                                        <a href="#"
-                                            class="btn btn-outline-light btnSpecial text-center px-4 py-2 mb-5">START
-                                            NOW FOR FREE!</a>
-                                    </footer>
-                                </article>
-                            </div>
-
-                            <div
-                                class="col-md-6 mb-4 mb-sm-0 d-flex justify-content-center imgContainer mt-5">
-                                <img src="./img/demo-screen-1.jpg"
-                                    alt="Phone screen image"
-                                    class="d-flex flex-column align-self-center mx-5 img1">
-                                <img src="./img/phone.png"
-                                    alt="Phone template image"
-                                    class="w-50 d-flex flex-column align-self-center mx-5 img2">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-5 secondSection" id="secondSection">
-            <div class="container py-5">
-                <div class="row">
-                    <div class="col-12 mx-auto d-flex justify-content-center">
-                        <article>
-                            <h2 class="text-center font-weight-light display-4">
-                                Discover what all the <br> buzz is about!
-                            </h2>
-                            <p class="text-center">
-                                Our app is available on any mobile device!
-                                Download now to get started!
-                            </p>
-                        </article>
-                    </div>
-                    <div
-                        class="col-md-6 d-flex justify-content-center justify-content-md-end mb-4">
-                        <a href="https://play.google.com/store">
-                            <img src="./img/google-play-badge.svg"
-                                alt="Google Play link" class="imgResize">
-                        </a>
-                    </div>
-                    <div
-                        class="col-md-6 d-flex justify-content-center  justify-content-md-start mb-4">
-                        <a href="https://www.apple.com/hu/ios/app-store/">
-                            <img src="./img/app-store-badge.svg"
-                                alt="Apple App Store link" class="imgResize">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="py-5 thirdSection bg-white" id="thirdSection">
+        <section class="firstSection">
             <div class="container">
-                <div class="row">
-                    <div
-                        class="col-12 mx-auto d-flex justify-content-center pt-5">
-                        <article>
-                            <h2
-                                class="h1 text-center font-weight-light display-5">
-                                Unlimited Features, Unlimited Fun
-                            </h2>
-                            <p class="text-center text-muted">
-                                Check out what you can do with this app theme!
-                            </p>
-                            <p class="text-center liner">
-                                ---------------------
-                            </p>
-                        </article>
-                    </div>
-                    <div
-                        class="row col-md-12 mx-auto d-flex align-items-center py-5 mb-5">
-                        <div
-                            class="col-md-6 mb-5 mb-sm-0 d-flex justify-content-center imgContainer my-5">
-                            <img src="./img/demo-screen-1.jpg"
-                                alt="Phone screen image"
-                                class="d-flex flex-column align-self-center mx-5 img1">
-                            <img src="./img/phone.png"
-                                alt="Phone template image"
-                                class="w-50 d-flex flex-column align-self-center mx-5 img2">
+                <div class="col-xs-12 col-sm-12 col-md-6">
+                    <article class="section1__article">
+                        <section class="">
+                            <h1 class="">
+                                New Age is an app
+                                landing page that will
+                                help you beautifully
+                                showcase your new
+                                mobile app, or anything
+                                else!
+                            </h1>
+                        </section>
+                        <footer class="">
+                            <a href="#" class="button btnSpecial">
+                                START NOW FOR FREE!
+                            </a>
+                        </footer>
+                    </article>
+                </div>
+
+                <div class="col-xs-12 col-sm-12 col-md-6 imgContainer">
+                    <img src="./img/demo-screen-1.jpg" alt="Phone screen image"
+                        class="img1">
+                    <img src="./img/phone.png" alt="Phone template image"
+                        class="img2">
+                </div>
+            </div>
+        </section>
+
+        <section class="secondSection" id="secondSection">
+            <div class="container container__second">
+                <div class="col-xs-12">
+                    <article>
+                        <h2 class="sectionHeader">
+                            Discover what all the <br> buzz is about!
+                        </h2>
+                        <p class="sectionContent">
+                            Our app is available on any mobile device!
+                            Download now to get started!
+                        </p>
+                    </article>
+                </div>
+                <div class="col-md-4"></div>
+                <div class="col-xs-12 col-md-2 col__imgLeft">
+                    <a href="https://play.google.com/store">
+                        <img src="./img/google-play-badge.svg"
+                            alt="Google Play link" class="imgResize">
+                    </a>
+                </div>
+                <div class="col-xs-12 col-md-2 col__imgRight">
+                    <a href="https://www.apple.com/hu/ios/app-store/">
+                        <img src="./img/app-store-badge.svg"
+                            alt="Apple App Store link" class="imgResize">
+                    </a>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </section>
+
+        <section class="thirdSection" id="thirdSection">
+            <div class="container">
+                <div class="col-md-12">
+                    <article class="article__third">
+                        <h2 class="article__header">
+                            Unlimited Features, Unlimited Fun
+                        </h2>
+                        <p class="text-center text-muted">
+                            Check out what you can do with this app theme!
+                        </p>
+                        <p class="text-center liner">
+                            ---------------------
+                        </p>
+                    </article>
+                </div>
+                <div class="col-xs-12 col-md-5 imgContainer">
+                    <img src="./img/demo-screen-1.jpg" alt="Phone screen image"
+                        class="d-flex flex-column align-self-center mx-5 img1">
+                    <img src="./img/phone.png" alt="Phone template image"
+                        class="w-50 d-flex flex-column align-self-center mx-5 img2">
+                </div>
+                <div class="col-xs-12 col-md-7 sectionTable">
+                    <div class="col-md-6 first_row">
+                        <div class="col-md-3">
+                            <div class="">
+                                <i
+                                    class="icon-screen-smartphone iconDesign"></i>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Device
+                                        Mockups</h3>
+                                    <p class="card-text">Ready to use
+                                        HTML/CSS device
+                                        mockups, no Photoshop required!
+                                    </p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-md-6 pt-5 mt-5 mt-md-0">
-                            <div
-                                class="row row-cols-1 row-cols-md-2 align-content-center">
-                                <div class="col mb-4">
-                                    <div
-                                        class="card d-flex justify-content-center text-center bg-transparent mt-5 mt-md-3">
-                                        <i
-                                            class="icon-screen-smartphone iconDesign"></i>
-                                        <!-- <i class="fas fa-mobile-alt iconDesign"></i> -->
-                                        <div class="card-body">
-                                            <h3 class="h5 card-title">Device
-                                                Mockups</h3>
-                                            <p class="card-text">Ready to use
-                                                HTML/CSS device
-                                                mockups, no Photoshop required!
-                                            </p>
-                                        </div>
-                                    </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <i class="icon-camera iconDesign"></i>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Flexible
+                                        Use
+                                    </h3>
+                                    <p class="card-text">Put an image,
+                                        video, animation, or
+                                        anything else in the screen!</p>
                                 </div>
-                                <div class="col mb-4">
-                                    <div
-                                        class="card d-flex justify-content-center text-center bg-transparent mt-5 mt-md-3">
-                                        <i class="icon-camera iconDesign"></i>
-                                        <!-- <i class="fas fa-camera iconDesign"></i> -->
-                                        <div class="card-body">
-                                            <h3 class="h5 card-title">Flexible
-                                                Use
-                                            </h3>
-                                            <p class="card-text">Put an image,
-                                                video, animation, or
-                                                anything else in the screen!</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 second_row">
+                        <div class="col-md-3">
+                            <div class="">
+                                <i class="icon-present iconDesign"></i>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Free to
+                                        Use
+                                    </h3>
+                                    <p class="card-text">As always, this
+                                        theme is free to
+                                        download and use for any
+                                        purpose!</p>
                                 </div>
-                                <div class="col">
-                                    <div
-                                        class="card d-flex justify-content-center text-center bg-transparent mt-5 mt-md-3">
-                                        <i class="icon-present iconDesign"></i>
-                                        <!-- <i class="fas fa-gift iconDesign"></i> -->
-                                        <div class="card-body">
-                                            <h3 class="h5 card-title">Free to
-                                                Use
-                                            </h3>
-                                            <p class="card-text">As always, this
-                                                theme is free to
-                                                download and use for any
-                                                purpose!</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div
-                                        class="card d-flex justify-content-center text-center bg-transparent mt-5 mt-md-3">
-                                        <i
-                                            class="icon-lock-open iconDesign"></i>
-                                        <!-- <i class="fas fa-unlock-alt iconDesign"></i> -->
-                                        <div class="card-body">
-                                            <h3 class="h5 card-title">Open
-                                                Source
-                                            </h3>
-                                            <p class="card-text">Since this
-                                                theme is MIT licensed, you
-                                                can use it commercially!</p>
-                                        </div>
-                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="">
+                                <i class="icon-lock-open iconDesign"></i>
+                                <div class="card-body">
+                                    <h3 class="h5 card-title">Open
+                                        Source
+                                    </h3>
+                                    <p class="card-text">Since this
+                                        theme is MIT licensed, you
+                                        can use it commercially!</p>
                                 </div>
                             </div>
                         </div>
@@ -289,7 +249,7 @@
         </section>
 
     </main>
-    
+
     <footer class="py-4 footerSection">
         <div class="container">
             <div class="row">
@@ -309,8 +269,8 @@
                         data-target="#modal2">
                         Terms
                     </a>
-                    <a href="#" class="footerLink text-uppercase" data-toggle="modal"
-                        data-target="#modal3">
+                    <a href="#" class="footerLink text-uppercase"
+                        data-toggle="modal" data-target="#modal3">
                         FAQ
                     </a>
                 </div>
@@ -372,7 +332,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title text-uppercase" id="modal3Label">FAQ</h5>
+                    <h5 class="modal-title text-uppercase" id="modal3Label">FAQ
+                    </h5>
                     <button type="button" class="close" data-dismiss="modal"
                         aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -399,10 +360,6 @@
     <script
         src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
         integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"
-        integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 
